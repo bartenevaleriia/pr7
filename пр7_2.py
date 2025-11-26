@@ -32,9 +32,9 @@ match order:
 
 match order:
     case 'pending'|'processing'|'shipped'|'delivered'|'cancelled':
-        print('')
-        print('‖      📦 СТАТУС ВАШЕГО ЗАКАЗА 📦      ‖')
-        print('')
+        print('╔══════════════════════════════════════╗')
+        print('║      📦 СТАТУС ВАШЕГО ЗАКАЗА 📦     ║')
+        print('╚══════════════════════════════════════╝')
         print('')
         print('Статус: ', status)
         print('Описание: ', describe)
@@ -43,4 +43,5 @@ match order:
     case _:
         print('❌ Ошибка: Неизвестный статус "invalid_status"')
         print('Доступные статусы: pending, processing, shipped, delivered, cancelled')
+
 
